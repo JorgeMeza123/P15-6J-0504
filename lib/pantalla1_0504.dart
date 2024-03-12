@@ -8,18 +8,21 @@ class Pantalla1_0504 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Pantalla1 Meza0504'),
+        title: const Text('Pantalla1 Meza0504'),
         backgroundColor: Colors.blueGrey,
       ),
       body: Center(
-          child: Column(
-        children: [
-          ElevatedButton(
-            onPressed: () {}, //fIN DE ONPRESSED
-            child: const Text("Pantallla1"),
-          )
-        ], //Fin de niños
-      )),
+        child: Card(
+          color: Colors.orange,
+          child: Padding(
+            padding: EdgeInsets.all(16), //Pading
+            child: Text(
+              "Tarjeta Meza",
+              style: TextStyle(fontSize: 30, color: Color(0xff1b2dcd)),
+            ),
+          ),
+        ),
+      ),
     );
   } //fin widget
 } //Fin pantalla 1

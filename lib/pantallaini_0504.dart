@@ -8,7 +8,7 @@ class PantallaIni_0504 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Pagina inicial Meza 0504"),
+        title: const Text("Pagina inicial Meza 0504"),
         backgroundColor: Colors.cyan,
       ),
       body: Center(
@@ -19,12 +19,12 @@ class PantallaIni_0504 extends StatelessWidget {
                 onPressed: () {
                   Navigator.pushNamed(context, "/Pantalla1_0504");
                 }, //Fin de onpressed
-                child: Text("Mover a pantalla1")),
+                child: const Text("Ejemplo Card")),
             ElevatedButton(
                 onPressed: () {
                   Navigator.pushNamed(context, "/Pantalla2_0504");
                 }, //Fin de onpressed
-                child: Text("Mover a pantalla2")),
+                child: const Text("Mover a pantalla2")),
           ], //Fin de niños
         ),
       ),
