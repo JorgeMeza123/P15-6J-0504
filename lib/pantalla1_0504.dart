@@ -9,16 +9,19 @@ class Pantalla1_0504 extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Pantalla1 Meza0504'),
-        backgroundColor: Colors.blueGrey,
+        backgroundColor: Color(0xff6cb071),
       ),
       body: Center(
-        child: Card(
-          color: Colors.orange,
-          child: Padding(
-            padding: EdgeInsets.all(16), //Pading
-            child: Text(
-              "Tarjeta Meza",
-              style: TextStyle(fontSize: 30, color: Color(0xff1b2dcd)),
+        child: Container(
+          color: Color(0xff75ff5a),
+          child: Card(
+            color: Color(0xff02b202),
+            child: Padding(
+              padding: EdgeInsets.all(16), //Pading
+              child: Text(
+                "Meza 0504",
+                style: TextStyle(fontSize: 30, color: Color(0xff1b2dcd)),
+              ),
             ),
           ),
         ),
